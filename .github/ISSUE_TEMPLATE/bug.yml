@@ -1,0 +1,42 @@
+name: Rapport de bug
+description: Bugs rencontrés sur Exodus Station (à résoudre ou attendre un fix)
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: reporting-version
+    attributes:
+      label: "Client Version :"
+      description: |
+        Votre version de BYOND (cf. About BYOND en haut à gauche dans votre client BYOND).
+        The BYOND version you are using to report this issue. You can find this information in the bottom left corner of the "About BYOND" window in the BYOND client.
+        It is strongly recommended that you include this, especially for concerns on the visual aspects of the game.
+      placeholder: "xxx.xxxx"
+    validations:
+      required: false
+  - type: textarea
+    id: issue-summary
+    attributes:
+      label: "Description du problème :"
+      description: |
+        Résumez le problème rencontré.
+        Briefly explain your issue in a few plain sentences. You may copy and paste the issue title here if it is suitable.
+      placeholder: |
+        "When I do X, Y happens instead of Z."
+        "X on Y map has Z issue."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Reproduction :"
+      description: |
+        Description des étapes de reproduction en incluant les étapes utiles (map, etc.)
+        Describe the steps to reproduce the issue in detail. Include any relevant information, such as the map, round type, and any other factors that may be relevant.
+        If it is a runtime-related error, please include the runtime here as that is pertient information. Issues are not for oddities introduced by admin varedits, ensure these occur in normal circumstances.
+      placeholder: |
+        1. Go to the X location
+        2. Do Y action
+        3. Observe Z result
+    validations:
+      required: true
